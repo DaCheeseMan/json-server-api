@@ -1,9 +1,24 @@
 {
-    "routes": [
-      {
-        "route": "/api/*",
-        "allowedRoles": ["anonymous"]
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/*",
+      "methods": [
+        "get",
+        "post",
+        "delete",
+        "patch",
+        "put"
+      ],
+      "statusCode": 301,
+      "allowedRoles": [
+        "anonymous"
+      ]
+    }
+  ]
+}
