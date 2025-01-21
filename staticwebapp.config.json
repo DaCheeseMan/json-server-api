@@ -1,8 +1,13 @@
 {
-    "routes": [
-        {
-            "route": "/*",
-            "allowedRoles": ["anonymous"]
-        }
-    ]
+  "routes": [
+    {
+      "navigationFallback": {
+        "rewrite": "EmployeeList",
+        "exclude": [
+          "/images/*.{png,jpg,gif,ico}",
+          "/*.{css,scss,js}"
+        ]
+      }
+    }
+  ]
 }
