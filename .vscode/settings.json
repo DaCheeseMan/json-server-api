@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8b5eaac5-4040-40e4-b07e-d6ec24130027/resourceGroups/ECMA-REST-API/providers/Microsoft.Web/sites/json-server-api",
+    "appService.deploySubpath": "."
+}
